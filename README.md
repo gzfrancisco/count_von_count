@@ -2,7 +2,7 @@
 
 Simple way to save the query result into ActiveRecord.
 
-[![Stories in Ready](https://badge.waffle.io/gzfrancisco/count_von_count.png?label=ready&title=Ready)](https://waffle.io/gzfrancisco/count_von_count)
+[![Stories in Ready](https://badge.waffle.io/gzfrancisco/count_von_count.png?label=ready&title=Ready)](https://waffle.io/gzfrancisco/count_von_count)[![Build Status](https://travis-ci.org/gzfrancisco/count_von_count.svg?branch=master)](https://travis-ci.org/gzfrancisco/count_von_count)
 
 ## Description
 
