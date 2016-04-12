@@ -24,6 +24,11 @@ We use this tools and conventions for the development of this gem:
 * Capybara
 * Annotate
 
+### Branch model
+
+Naming branches: <http://stackoverflow.com/questions/273695/git-branch-naming-best-practices>
+Branch model: <http://nvie.com/posts/a-successful-git-branching-model/>
+
 ## Authors
 
 * [Francisco Granados](https://github.com/gzfrancisco)
