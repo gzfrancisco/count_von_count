@@ -1,4 +1,5 @@
 require 'rails/generators'
+require 'rails/generators/active_record'
 
 module CountVonCount
   module Generators
@@ -6,20 +7,22 @@ module CountVonCount
     class InstallGenerator < Rails::Generators::Base
       include Rails::Generators::Migration
 
-      source_root File.expand_path('../templates', __FILE__)
+      source_root File.expand_path('../../templates', __FILE__)
 
       def install
-        #create_file 'config/initializers/initializer.rb',
-        #            '# Add my file content here'
-        copy_migration "count_migration"
+        
       end
 
-      def copy_migration(filename)
-        if self.class.migration_exists?("db/migrate", "#{filename}")
-          say_status("skipped", "Migration #{filename}.rb already exists")
+      def copy_migration
+        if self.class.migration_exists?("db/migrate", "count_migration")
+          say_status("skipped", "Migration count_migration.rb already exists")
         else
-          migration_template "migrations/#{filename}.rb", "db/migrate/#{filename}.rb"
+          migration_template "count_migration.rb", "db/migrate/count_migration.rb"
         end
+      end
+
+      def self.next_migration_number dirname
+        ActiveRecord::Generators::Base.next_migration_number dirname
       end
 
     end
