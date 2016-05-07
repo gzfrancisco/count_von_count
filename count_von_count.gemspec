@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name = 'count_von_count'
-  s.version = '0.1.3'
+  s.version = '0.1.8'
   s.date = '2016-04-07'
   s.summary = 'Simple gem'
   s.license = 'GNU GPL3'
