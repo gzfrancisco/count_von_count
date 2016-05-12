@@ -25,6 +25,12 @@ module CountVonCount
         ActiveRecord::Generators::Base.next_migration_number dirname
       end
 
+      def add_von_count_routes
+        puts "Generating routes"
+        count_von_count = "count_von_count_for :counts"
+        route count_von_count
+      end
+
     end
   end
 end
