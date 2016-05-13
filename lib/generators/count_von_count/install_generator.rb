@@ -17,7 +17,7 @@ module CountVonCount
         if self.class.migration_exists?("db/migrate", "count_migration")
           say_status("skipped", "Migration count_migration.rb already exists")
         else
-          migration_template "count_migration.rb", "db/migrate/count_migration.rb"
+          migration_template "count_migration.rb", "db/migrate/create_count.rb"
         end
       end
 
