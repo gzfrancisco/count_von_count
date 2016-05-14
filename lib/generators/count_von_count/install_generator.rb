@@ -26,8 +26,7 @@ module CountVonCount
       end
 
       def add_von_count_routes
-        puts "Generating routes"
-        count_von_count = "mount CountVonCount::Engine, at: \"/count_von_count\""
+        count_von_count = 'mount CountVonCount::Engine, at: \'/count_von_count\''
         route count_von_count
       end
 
